@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "797bda49-b2af-4a6d-8d71-1e6035c6be9c",
+		"name": "consultas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/banco/consulta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "convenio",
+						"value": "AGUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idFactura\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/banco/consulta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banco",
+						"consulta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

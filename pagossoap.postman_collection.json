@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "131270cb-ae97-4b1b-ac40-1cc8cd3fd7c5",
+		"name": "pagossoap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/banco/pago",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "convenio",
+						"value": "GAS",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"referenciaFactura\" : {\"referenciaFactura\":\"123\"},\r\n    \"totalPagar\": 423423434.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/banco/pago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banco",
+						"pago"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

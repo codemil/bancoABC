@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "f9195796-ccb8-456b-8487-5340709cc323",
+		"name": "pagos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/banco/pago",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "convenio",
+						"value": "AGUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idFactura\": 125,\r\n\t\"valorFactura\": 312312\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/banco/pago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banco",
+						"pago"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
