@@ -19,4 +19,4 @@ Los convenios se parametrizan en base de datos y se obtienen de acuerdo con el e
 ![alt text](https://github.com/codemil/bancoAbc/blob/main/BancoABC.jpg?raw=true)
 
 ## Swagger:
-Adjunto como archivo
+Adjunto como archivo (Se adjuntan tambien collecciones de postman)
